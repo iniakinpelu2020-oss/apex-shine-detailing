@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Apex Shine Auto Detailing — Mobile Detailing in Austin, TX</title>
+<meta name="description" content="Mobile auto detailing across Austin. Full details, interior shampoo, wash and wax, paint correction and ceramic coating. Flat rates, we come to you.">
+<meta name="theme-color" content="#0a0b0d">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+
+<div class="boot" id="boot" aria-hidden="true">
+  <div class="boot-in">
+    <span class="boot-mark">APEX</span>
+    <span class="boot-sub">SHINE · MOBILE DETAILING · AUSTIN TX</span>
+    <span class="boot-bar"><i></i></span>
+  </div>
+</div>
+<div class="scan" aria-hidden="true"></div>
+
+<header class="top">
+  <div class="wrap top-in">
+    <a class="brand" href="#top">APEX<span>SHINE</span><small>Austin, TX</small></a>
+    <nav class="navlinks">
+      <a href="#services">Services</a>
+      <a href="#rates">Rates</a>
+      <a href="#hours">Hours</a>
+    </nav>
+    <div class="top-actions">
+      <a class="btn btn-line hide-sm" href="tel:+15126389142">+1 512-638-9142</a>
+      <button class="btn btn-fill cart-pill" id="openEstimate" type="button">Estimate <span class="cart-count" id="cartCount">0</span></button>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div class="hero-copy">
+        <p class="kicker">Mobile detailing · Austin, TX</p>
+        <h1>Showroom finish.<br><em>Your driveway.</em></h1>
+        <p class="lede">We bring the water, the power and the chemicals. Pick the detail, size the vehicle, and the flat number updates as you tap — then call or text to lock a slot.</p>
+        <div class="hero-cta">
+          <a class="btn btn-fill" href="tel:+15126389142">Book a detail</a>
+          <a class="btn btn-ghost" href="sms:+15126389142">Text the team</a>
+        </div>
+        <div class="ratecard">
+          <span class="score">5.0</span>
+          <div>
+            <div class="stars" aria-hidden="true">★★★★★</div>
+            <b>64 Google reviews</b>
+            <small>South &amp; North Austin · mobile only</small>
+          </div>
+        </div>
+      </div>
+
+      <div class="cmp-wrap" id="cmpWrap">
+        <div class="cmp" id="cmp">
+          <img class="cmp-after" src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=900&q=75" alt="Detailed dark coupe with a deep gloss finish">
+          <div class="cmp-before">
+            <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=900&q=72" alt="The same car with dull, uncorrected paint">
+          </div>
+          <div class="cmp-handle" id="cmpHandle"><span>⇔</span></div>
+          <span class="cmp-tag l">Before</span>
+          <span class="cmp-tag r">After</span>
+        </div>
+        <div class="cmp-chip">We come to you<span>South &amp; North Austin</span></div>
+        <p class="cmp-note">Drag the bar to see the difference</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="hazard" aria-hidden="true"></div>
+
+  <div class="marque-sec" aria-hidden="true"><div class="marque-in" id="ticker"></div></div>
+
+  <section class="rack-sec wrap" id="services">
+    <div class="rack-head">
+      <div>
+        <p class="kicker">01 / The service rack</p>
+        <h2 class="sec">Five details. Flat rates.</h2>
+        <p class="sub">Drag the rack, use the arrows, or tap the card facing you. Every price is the whole job — no water fee, no travel charge.</p>
+      </div>
+      <div class="pills" id="cats" role="group" aria-label="Filter services"></div>
+    </div>
+
+    <div class="rack-stage" id="rackStage" role="group" aria-label="Service rack">
+      <div class="rack-inner" id="rackInner"></div>
+    </div>
+
+    <div class="rack-ctl">
+      <button class="ctl" id="prev" type="button" aria-label="Previous service">←</button>
+      <div class="dots" id="dots"></div>
+      <button class="ctl" id="next" type="button" aria-label="Next service">→</button>
+    </div>
+    <p class="hint">Tap the front card to open the live estimate.</p>
+  </section>
+
+  <section class="detail" id="detail">
+    <div class="wrap">
+      <button class="back" id="backBtn" type="button">← Back to the rack</button>
+      <div class="cfg">
+        <div class="cfg-media">
+          <img id="cfgImg" src="" alt="">
+          <span class="cfg-tag" id="cfgCat">Service</span>
+        </div>
+        <div class="cfg-body">
+          <p class="kicker" id="cfgIndex">02 / Service</p>
+          <h2 id="cfgName">Service</h2>
+          <p class="cfg-desc" id="cfgDesc"></p>
+          <div class="cfg-facts">
+            <span id="cfgTime">≈ 3 hrs on site</span>
+            <span id="cfgTown">Austin, TX</span>
+          </div>
+
+          <div class="opt-group"><h4>Vehicle</h4><div class="opt-row" id="optSize"></div></div>
+          <div class="opt-group"><h4>Condition</h4><div class="opt-row" id="optCond"></div></div>
+          <div class="opt-group"><h4>Timing</h4><div class="opt-row" id="optSched"></div></div>
+
+          <div class="buy">
+            <div class="price"><span>Your estimate</span><b id="livePrice">$0</b></div>
+            <button class="btn btn-fill" id="addBtn" type="button">Add to estimate</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="more">
+        <p class="kicker">03 / Keep looking</p>
+        <div class="more-grid" id="moreGrid"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sheet" id="rates">
+    <div class="wrap">
+      <p class="kicker">04 / Rates</p>
+      <h2 class="sec">Printed flat. Paid flat.</h2>
+      <p class="sub">Base number for a sedan or coupe in maintained condition. Vehicle size and condition adjust it live in the estimate, so the quote you see is the quote you pay.</p>
+      <ul id="pricelist"></ul>
+      <div class="sheet-cta">
+        <a class="btn btn-fill" href="tel:+15126389142">Call +1 512-638-9142</a>
+        <button class="btn btn-ghost" id="openEstimate2" type="button">Open my estimate</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="steps-sec">
+    <div class="wrap">
+      <p class="kicker">05 / How a detail runs</p>
+      <h2 class="sec">Booked today. Glossed this week.</h2>
+      <div class="steps">
+        <article class="step">
+          <span class="n">01</span>
+          <h3>Build the estimate</h3>
+          <p>Choose the detail, set the vehicle size and how much correction the paint or interior needs. The number moves with every tap.</p>
+        </article>
+        <article class="step">
+          <span class="n">02</span>
+          <h3>Send it over</h3>
+          <p>Call or text the list with your address. You get a confirmed window and a flat price before we roll up.</p>
+        </article>
+        <article class="step">
+          <span class="n">03</span>
+          <h3>We come to you</h3>
+          <p>Our van carries its own water and power. Driveway, apartment garage or office lot — we work where the car sits.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="info-sec" id="hours">
+    <div class="wrap info-grid">
+      <div class="panel">
+        <p class="kicker">06 / Hours</p>
+        <ul class="hours" id="hoursList">
+          <li data-day="Mon"><span>Monday</span><span>8:00 AM – 6:00 PM</span></li>
+          <li data-day="Tue"><span>Tuesday</span><span>8:00 AM – 6:00 PM</span></li>
+          <li data-day="Wed"><span>Wednesday</span><span>8:00 AM – 6:00 PM</span></li>
+          <li data-day="Thu"><span>Thursday</span><span>8:00 AM – 6:00 PM</span></li>
+          <li data-day="Fri"><span>Friday</span><span>8:00 AM – 6:00 PM</span></li>
+          <li data-day="Sat"><span>Saturday</span><span>9:00 AM – 4:00 PM</span></li>
+          <li data-day="Sun" class="off"><span>Sunday</span><span>Closed</span></li>
+        </ul>
+        <p class="tiny">Central time. Mobile jobs need a parking spot and a water tap on request.</p>
+      </div>
+      <div class="panel">
+        <p class="kicker">07 / Where we detail</p>
+        <div class="chips">
+          <span>Austin</span><span>South Austin</span><span>North Austin</span><span>East Austin</span><span>Round Rock</span><span>Cedar Park</span>
+        </div>
+        <p class="kicker gap-top">08 / Review highlights</p>
+        <ul class="quotes">
+          <li>Punctual mobile arrival across South and North Austin driveways.</li>
+          <li>Interior restorations customers describe as showroom-level.</li>
+          <li>Transparent flat rates quoted before the job, not after.</li>
+        </ul>
+        <a class="btn btn-fill gap-top-sm" href="tel:+15126389142">Call the team</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="wrap foot">
+      <div>
+        <a class="brand" href="#top">APEX<span>SHINE</span><small>Austin, TX</small></a>
+        <p>Mobile auto detailing in Austin — full details, interior shampoo, wash and wax, paint correction and ceramic coating. Flat rates, we come to you.</p>
+      </div>
+      <div class="foot-right">
+        <a href="tel:+15126389142">+1 512-638-9142</a>
+        <small>Mon–Sat · 8:00 AM – 6:00 PM CT</small>
+        <small>© <span id="yr">2026</span> Apex Shine Auto Detailing</small>
+      </div>
+    </div>
+  </footer>
+</main>
+
+<div class="scrim" id="scrim"></div>
+<aside class="drawer" id="drawer" aria-hidden="true" aria-label="Your estimate">
+  <div class="drawer-top">
+    <h3>Your estimate</h3>
+    <button class="x" id="closeDrawer" type="button" aria-label="Close">✕</button>
+  </div>
+  <div class="drawer-body" id="drawerBody"></div>
+  <div class="drawer-foot">
+    <div class="total"><span>Estimated total</span><b id="total">$0</b></div>
+    <a class="btn btn-fill btn-block" id="callBtn" href="tel:+15126389142">Call to book · +1 512-638-9142</a>
+    <a class="btn btn-line btn-block" id="textBtn" href="sms:+15126389142">Text this estimate</a>
+    <p class="fine">Estimate only — confirmed before we start, never after.</p>
+  </div>
+</aside>
+
+<div class="toast" id="toast">Added to your estimate</div>
+
+<div class="mbar">
+  <a class="btn btn-fill" href="tel:+15126389142">Call</a>
+  <button class="btn btn-ghost cart-pill" id="openEstimate3" type="button">Estimate <span class="cart-count" id="cartCount2">0</span></button>
+</div>
+
+<script src="/app.js" defer></script>
+</body>
+</html>
